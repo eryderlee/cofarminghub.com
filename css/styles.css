@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.resizable-container {
+    position: relative;
+    display: inline-block;
+}
+
+.resizable {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+/* Handle for resizing */
+.resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    cursor: se-resize;
+}
+
+.hero-container {
+    text-align: center;
+}
+
+.logo {
+    background: url(..\images\WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png);
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    transform: translateX(-90%);
+    border-radius: 5px;
+    left: 120px;
+}
+
+.logo img {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+    position: fixed; 
+    top: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; /* Adjust this value as needed */
+    background-color: rgba(0, 0, 0, 0.171);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+} 
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; 
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left : 0;
+    bottom: -6px;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: url('../images/pexels-nc-farm-bureau-mark-2886937.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100vh; /* Ensure the section covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure it covers the full width */
+    overflow: hidden; /* Ensure no scrollbars appear */
+}
+
+.hero h2 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+  font-size: 69px;
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 51.8125rem;
+    color: #fff;
+    position: relative;
+    margin-top: 16rem;
+}
+
+.hero p {
+    
+     /* 16px - 20px */
+     font-size: clamp(1rem, 1.95vw, 1.25rem);
+     line-height: 1.5em;
+     text-align: center;
+     width: 100%;
+     /* 464px - 622px */
+     max-width: clamp(29rem, 60vw, 38.785rem);
+     margin: 0 auto 0;
+     margin-bottom: 2rem;
+     color: #fff;
+}
+
+.about, .services, .projects, .contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.service, .project {
+    margin: 1rem 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact form button {
+    padding: 0.7rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

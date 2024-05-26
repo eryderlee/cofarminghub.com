@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoFarmingHub - Home</title>
+  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="..\css\animate.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .animated-item {
+        opacity: 0; /* Make elements invisible initially */
+    }
+</style>
+<script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+        <div class="logo">
+          <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 1s;">
+          <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/partners.html">Partners</a></li>
+          <li><a href="pages/news.html">News & Events</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="animated-item" data-animation="fadeInUp" style="animation-duration: 1s;">
+          <h2>Welcome to CoFarmingHub</h2>
+          <p>Your hub for innovative co-farming solutions in the Asia Pacific region.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="introduction">
+      <div class="container">
+        <h2 id="resizable-h2" class="resizable">About CoFarmingHub</h2>
+        <p id="resizable-p" class="resizable">CoFarmingHub is dedicated to promoting sustainable farming practices through collaboration and innovation.</p>
+      </div>
+    </section>
+    <section class="highlights">
+      <div class="container">
+        <h3>Key Highlights</h3>
+        <ul>
+          <li>Strategic alliances with PWD Smart Farmability and UN WHD</li>
+          <li>First PWD Smart Farmability Pilot Project outside Malaysia</li>
+          <li>Located at WynTREE Nursery, Point Cook, VIC 3030</li>
+        </ul>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h3>Our Partners</h3>
+        <div class="partner-logos">
+          <a href="partner1.html"><img src="images/partner1-logo.png" alt="Partner 1 Logo"></a>
+          <a href="partner2.html"><img src="images/partner2-logo.png" alt="Partner 2 Logo"></a>
+          <!-- Add more partner logos as needed -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+      <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
+      </div>
+
+      <div class="social-media">
+        <a href="https://facebook.com/cofarminghub" target="_blank">Facebook</a>
+        <a href="https://twitter.com/cofarminghub" target="_blank">Twitter</a>
+        <a href="https://instagram.com/cofarminghub" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <script>
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+    
+    // Add the animation class when the element is in the viewport
+    function addAnimationOnScroll() {
+        const elements = document.querySelectorAll('.animated-item');
+    
+        for (const element of elements) {
+            if (isInViewport(element) && !element.classList.contains('animated')) {
+                const animationName = element.getAttribute('data-animation');
+                element.classList.add(animationName);
+                element.style.opacity = 1; // Make element visible
+            }
+        }
+    }
+    
+    // Listen for scroll and resize events
+    window.addEventListener('scroll', addAnimationOnScroll);
+    window.addEventListener('resize', addAnimationOnScroll);
+    
+    // Check on initial load
+    addAnimationOnScroll();
+    </script>
+  
+  <script src="js/resizable.js"></script>
+</body>
+</html>
