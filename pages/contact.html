@@ -5,16 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoFarmingHub - Contact Us</title>
   <link rel="stylesheet" href="..\css\styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .animated-item {
+        opacity: 0; /* Make elements invisible initially */
+    }
+</style>
 </head>
 <body>
   <header>
+
+    <section class="minihero">
+      <div class="background-overlay">
+        <div class="minihero-container">
+          <div class="minihero-title"> 
+          <h2>Contact Us</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
       <div class="logo">
         <img src="..\images\WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="products.html">Products</a></li>
@@ -28,39 +45,43 @@
   <main>
     <section class="contact">
       <div class="container">
-        <h2>Contact Us</h2>
+        <h2>Register Your Interest In Becoming Our Impact Partner</h2>
+        <p>We are open to any healthy collaboration with organisations that are aligned with our advocacies. Kindly fill in the form below, and we'll get back to you as soon as we can.</p>
         <form action="submit-contact-form.php" method="POST">
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Name" required>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <input type="text" id="contact" name="contact" placeholder="Contact" required>
           </div>
-          <button type="submit">Send Message</button>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+          </div>
+          <button type="submit">Submit</button>
         </form>
+      </div>
+    </section>
+    
         <h2>Our Location</h2>
         <div id="map">
           <!-- Embed Google Maps iframe here -->
-          <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <h2>Follow Us</h2>
-        <div class="social-media">
-          <a href="https://facebook.com/cofarminghub" target="_blank">Facebook</a>
-          <a href="https://twitter.com/cofarminghub" target="_blank">Twitter</a>
-          <a href="https://instagram.com/cofarminghub" target="_blank">Instagram</a>
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=461%20point%20cook%20Rd+(WynTree%20Nursery)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
         </div>
       </div>
     </section>
   </main>
   <footer>
     <div class="container">
-      <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
+        <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
+      
+      <div class="social-media">
+        <a href="https://facebook.com/cofarminghub" target="_blank">Facebook</a>
+        <a href="https://twitter.com/cofarminghub" target="_blank">Twitter</a>
+        <a href="https://instagram.com/cofarminghub" target="_blank">Instagram</a>
+      </div>
     </div>
   </footer>
 </body>

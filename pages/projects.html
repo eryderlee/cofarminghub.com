@@ -4,48 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoFarmingHub - Projects</title>
-  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/projectStyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .animated-item {
+        opacity: 0; /* Make elements invisible initially */
+    }
+    .project-box {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding: 2rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+    }
+    .project-box h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .project-box p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .project-box .learn-more {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+    .project-box .learn-more:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
   <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="logo">
-        <img src="..\images\WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
+        <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
       </div>
       <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i id="menubars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <ul id="sidemenu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="news.html">News & Events</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
     </div>
-
   </header>
   <main>
-    <section class="projects">
-      <div class="container">
-        <h2>Current Projects</h2>
-        <div class="project">
-          <h3>PWD Smart Farmability Pilot Project</h3>
-          <p>Implementing innovative aquaponics systems at WynTREE Nursery to create sustainable and inclusive farming solutions.</p>
-        </div>
-        <h2>Future Projects</h2>
-        <div class="project">
-          <h3>Urban Aquaponics Expansion</h3>
-          <p>Expanding our aquaponics initiatives to more urban locations across Melbourne to promote sustainable urban agriculture.</p>
-        </div>
-        <div class="project">
-          <h3>Community Farming Workshops</h3>
-          <p>Hosting workshops to educate and engage local communities in sustainable farming practices.</p>
+    <section class="minihero">
+      <div class="background-overlay">
+        <div class="minihero-container">
+          <div class="minihero-title"> 
+            <h2>Projects</h2>
+          </div>
         </div>
       </div>
     </section>
+    
+    <section class="projects">
+      <div class="container">
+        <h2>Current Projects</h2>
+        <div class="project-box" style="background-image: url('../images/canopy_accelerator.png'); background-position: relative;">
+          <h3>Canopy Accelerator Co-op</h3>
+          <p>A social enterprise focused on growing trees and managing the WynTree Nursery.</p>
+          <a href="canopy_accelerator.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="project-box" style="background-image: url('../images/PWD image1.jpg'); ">
+          <h3>PWD Smart Farmability Pilot Project</h3>
+          <p>Implementing innovative aquaponics systems at WynTree Nursery to create sustainable and inclusive farming solutions.</p>
+          <a href="pwd_smart_farmability.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="project-box" style="background-image: url('../images/Fishermans-bend-innovation-competition-2024.png');">
+          <h3>Fishermans Bend Digital Innovation Challenge</h3>
+          <p>Participating in the Fishermans Bend Digital Innovation Challenge using our Pilot Project from PWD Smart Farmability.</p>
+          <a href="fishermans_bend.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="project-box" style="background-image: url('../images/businessPlan.jpg');">
+          <h3>Aquaponics and Terrarium Kits</h3>
+          <p>Rolling out aquaponics and terrarium kits to promote home-based sustainable farming and provide educational resources to schools and community centers.</p>
+          <a href="project pages\businessPlan.html" class="learn-more">Learn More</a>
+        </div>
+        <h2>Future Projects</h2>
+        <div class="project-box" style="background-image: url('../images/urban_aquaponics.jpg');">
+          <h3>Urban Aquaponics Expansion</h3>
+          <p>Expanding our aquaponics initiatives to more urban locations across Melbourne to promote sustainable urban agriculture.</p>
+          <a href="urban_aquaponics.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="project-box" style="background-image: url('../images/community_workshops.jpg');">
+          <h3>Community Farming Workshops</h3>
+          <p>Hosting workshops to educate and engage local communities in sustainable farming practices.</p>
+          <a href="community_workshops.html" class="learn-more">Learn More</a>
+        </div>
+        
+      </div>
+    </section>
+    
   </main>
   <footer>
     <div class="container">

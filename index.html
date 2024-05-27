@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoFarmingHub - Home</title>
-  <link rel="stylesheet" href="..\css\styles.css">
-  <link rel="stylesheet" href="..\css\animate.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/animate.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     .animated-item {
         opacity: 0; /* Make elements invisible initially */
     }
-</style>
-<script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
-
+  </style>
+  <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <div class="container">
-      
+    <div class="animated-item" data-animation="fadeInUp" style="animation-duration: 1s;">
+      <div class="container">
         <div class="logo">
-          <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 1s;">
-          <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
+          <div class="animated-item" data-animation="fadeInLeft" style="animation-duration: 1s;">
+            <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
+          </div>
         </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/partners.html">Partners</a></li>
+            <li><a href="pages/news.html">News & Events</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/projects.html">Projects</a></li>
-          <li><a href="pages/products.html">Products</a></li>
-          <li><a href="pages/partners.html">Partners</a></li>
-          <li><a href="pages/news.html">News & Events</a></li>
-          <li><a href="pages/contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main>
-
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-container">
         <div class="animated-item" data-animation="fadeInUp" style="animation-duration: 1s;">
@@ -49,40 +49,103 @@
       </div>
     </section>
 
-    <section class="introduction">
+    <!-- About Us Section -->
+    <section class="about">
       <div class="container">
-        <h2 id="resizable-h2" class="resizable">About CoFarmingHub</h2>
-        <p id="resizable-p" class="resizable">CoFarmingHub is dedicated to promoting sustainable farming practices through collaboration and innovation.</p>
+        <h2>About Us</h2>
+        <p>CoFarmingHub is dedicated to promoting sustainable farming practices through collaboration and innovation.</p>
+        <div class="about-details">
+          <img src="../images/team1.png" alt="CoFarmingHub Network" class="about-image">
+          <img src="../images/team2.png" alt="CoFarmingHub Collaboration" class="about-image">
+          <div class="about-text">
+            <p>Learn more about our mission, our vision and our team </p>
+            <a href="pages/about.html" class="learn-more">Learn More About Us</a>
+          </div>
+        </div>
+      </section>
+          
+          
+
+    <!-- Our Values Section -->
+    <section class="values">
+      <div class="container">
+        <h2>Values</h2>
+        <blockquote>
+          <p>"I believe in positive reciprocity on sustainability initiatives where strategic alliances are influenced by cross-cultural goodwill and commitment facilitating cooperation social responsibility community engagement and lasting impact." - Raymond Loh, CEO</p>
+        </blockquote>
+        <div class="values-list">
+          <div class="value-item">
+            <h3>Sustainability</h3>
+            <p>We prioritize sustainable farming practices that benefit the environment and our communities.</p>
+          </div>
+          <div class="value-item">
+            <h3>Innovation</h3>
+            <p>Our projects leverage cutting-edge technology to solve pressing agricultural challenges.</p>
+          </div>
+          <div class="value-item">
+            <h3>Collaboration</h3>
+            <p>We work with a diverse network of partners to achieve shared goals and drive impact.</p>
+          </div>
+          <p>The UNSDG17 are a good representation of our values as our projects will fufill 10 of the 17 UNSDG </p>
+          <img src="../images/Screenshot 2024-05-04 152616.png" alt="CoFarmingHub Network" class="UNSDG-Image">
+  
+        </div>
       </div>
     </section>
-    <section class="highlights">
-      <div class="container">
-        <h3>Key Highlights</h3>
-        <ul>
-          <li>Strategic alliances with PWD Smart Farmability and UN WHD</li>
-          <li>First PWD Smart Farmability Pilot Project outside Malaysia</li>
-          <li>Located at WynTREE Nursery, Point Cook, VIC 3030</li>
-        </ul>
-      </div>
-    </section>
+
+    <!-- Our Partners Section -->
     <section class="partners">
       <div class="container">
-        <h3>Our Partners</h3>
-        <div class="partner-logos">
-          <a href="partner1.html"><img src="images/partner1-logo.png" alt="Partner 1 Logo"></a>
-          <a href="partner2.html"><img src="images/partner2-logo.png" alt="Partner 2 Logo"></a>
-          <!-- Add more partner logos as needed -->
+        <h2>Partners</h2>
+        <p>We have strategic alliances with PWD Smart Farmability and UN WHD for the first PWD Smart Farmability Pilot Project outside Malaysia.</p>
+        <a href="pages/partners.html" class="learn-more">Learn More About Our Partners</a>
+      </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>CoFarmingHub is involved in various projects aimed at enhancing sustainability and community welfare through innovative agricultural practices.</p>
+        <a href="pages/projects.html" class="learn-more">Learn More About Our Projects</a>
+      </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section class="products">
+      <div class="container">
+        <h2>Products</h2>
+        <p>We offer a range of sustainable products designed to support eco-friendly farming and lifestyle practices.</p>
+        <a href="pages/products.html" class="learn-more">Learn More About Our Products</a>
+      </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="news">
+      <div class="container">
+        <h2>Latest News</h2>
+        <div class="news-list">
+          <!-- Add news items here -->
         </div>
+        <a href="pages/news.html" class="learn-more">See More News & Events</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Reach out to us for any inquiries or collaborations.</p>
+        <a href="pages/contact.html" class="learn-more">Contact Us</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
-      <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
+      <div class="animated-item" data-animation="fadeInUp" style="animation-duration: 1s;">
+        <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
       </div>
-
       <div class="social-media">
         <a href="https://facebook.com/cofarminghub" target="_blank">Facebook</a>
         <a href="https://twitter.com/cofarminghub" target="_blank">Twitter</a>
@@ -91,7 +154,6 @@
     </div>
   </footer>
 
- 
   <script>
     // Function to check if element is in viewport
     function isInViewport(element) {
@@ -121,8 +183,7 @@
     
     // Check on initial load
     addAnimationOnScroll();
-    </script>
-  
+  </script>
   <script src="js/resizable.js"></script>
 </body>
 </html>

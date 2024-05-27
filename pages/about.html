@@ -4,17 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoFarmingHub - About Us</title>
-  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="..\css\aboutStyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    .animated-item {
+        opacity: 0; /* Make elements invisible initially */
+    }
+    .team-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .team-member {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin: 1rem;
+        text-align: center;
+    }
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .photos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    .photos-grid img {
+        width: 100%;
+        border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <section class="minihero">
+      <div class="background-overlay">
+        <div class="minihero-container">
+          <div class="minihero-title"> 
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="container">
       <div class="logo">
         <img src="..\images\WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="products.html">Products</a></li>
@@ -27,36 +67,116 @@
   </header>
   <main>
     <section class="about">
-      <div class="mini-hero">
-        <h2> </h2>
-      </div>
       <div class="container">
         <h2>Our Mission</h2>
-        <p>To promote sustainable farming practices through advanced technologies and collaborative efforts.</p>
+        <p>To promote sustainable farming practices through advanced technologies and collaborative efforts, driving economic growth and uplifting communities.</p>
+
         <h2>Our Vision</h2>
-        <p>To be the leading hub for co-farming innovations, driving growth and sustainability in urban environments.</p>
+        <p>To be the leading hub for co-farming innovations, fostering a resilient, inclusive, and sustainable future for urban environments worldwide.</p>
+
         <h2>Our Team</h2>
-        <div class="team-members">
-          <div class="team-member">
-            <img src="images/raymond-loh.jpg" alt="Raymond Loh">
+        <div class="individual-team">
+          <img src="../images/raymond.jpg" alt="Raymond Loh">
+          <div class="description">
             <h3>Raymond Loh</h3>
             <p>Founder</p>
-          </div>
-          <div class="team-member">
-            <img src="images/billy-tang.jpg" alt="Dr. Billy Tang">
-            <h3>Dr. Billy Tang</h3>
-            <p>Co-Founder</p>
-          </div>
-          <div class="team-member">
-            <img src="images/walter-villagonzalo.jpg" alt="Walter Villagonzalo">
-            <h3>Walter Villagonzalo</h3>
-            <p>Advisor</p>
-          </div>
-          <div class="team-member">
-            <img src="images/tim-langdon.jpg" alt="Tim Langdon">
-            <h3>Tim Langdon</h3>
-            <p>Project Manager</p>
+            <p>Raymond leads CoFarmingHub with a vision for sustainable agriculture and innovation.</p>
+            <a href="https://www.linkedin.com/in/raymond-loh">LinkedIn</a>
           </div>
         </div>
+        <div class="individual-team">
+          <img src="../images/Dr Billy tang.jpg" alt="Dr. Billy Tang">
+          <div class="description">
+            <h3>Dr. Billy Tang</h3>
+            <p>Partner</p>
+            <p>Dr. Tang focuses on integrating smart technologies for sustainable urban farming.</p>
+            <a href="https://www.linkedin.com/in/billy-tang">LinkedIn</a>
+          </div>
+        </div>
+        <div class="individual-team">
+          <img src="../images/Dr noli.png" alt="Walter Villagonzalo">
+          <div class="description">
+            <h3>Dr. Noli Sicad</h3>
+            <p>Partner</p>
+            <p>Dr.Sicad advices on the implementation of various projects</p>
+            <a href="https://www.linkedin.com/in/walter-villagonzalo">LinkedIn</a>
+          </div>
+        </div>
+        <div class="individual-team">
+          <img src="../images/greg fendis.jpg" alt="Tim Langdon">
+          <div class="description">
+            <h3>Greg Fendis</h3>
+            <p>Partner</p>
+            <p>Fendis has a large pool of resources and collaborates with us as we have the same goals</p>
+            <a href="https://www.linkedin.com/in/tim-langdon">LinkedIn</a>
+          </div>
+        </div>
+        <!-- Add more individual team members as needed -->
+
+        <div class="carousel-container">
+          <h2>Group Photos</h2>
+          <div class="team-carousel">
+            <div class="team-member">
+              <img src="../images/team4.jpg" alt="Group Photo 1">
+            </div>
+            <div class="team-member">
+              <img src="../images/team9.jpg" alt="Group Photo 2">
+            </div>
+            <div class="team-member">
+              <img src="../images/team3.jpg" alt="Group Photo 3">
+            </div>
+            <div class="team-member">
+              <img src="../images/team6.jpg" alt="Group Photo 1">
+            </div>
+            <div class="team-member">
+              <img src="../images/team7.jpg" alt="Group Photo 2">
+            </div>
+            <div class="team-member">
+              <img src="../images/team8.jpg" alt="Group Photo 3">
+            </div>
+            <div class="team-member">
+              <img src="../images/team5.jpg" alt="Group Photo 3">
+            </div>
+            <!-- Add more group photos as needed -->
+          </div>
+        </div>
+
+        <h2>WynTree Nursery</h2>
+        <p>CoFarmingHub operates from the WynTree Nursery located in Point Cook, VIC 3030. This location serves as the physical hub for our innovative projects and community collaborations.</p>
+        <div class="photos-grid">
+          <img src="../images/land.png" alt="WynTree Nursery 1">
+          <img src="../images/layout.png" alt="WynTree Nursery 2">
+          <img src="../images/work.png" alt="WynTree Nursery 3">
+          <!-- Add more photos as needed -->
+        </div>
+
+        <h2>Awards & Recognition</h2>
+        <ul>
+          <li>2023: WYNDHAM business award</li>
+          <img src="../images/award1.png">
+          <li>other</li>
+          <li>other</li>
+          <!-- Add more awards as needed -->
+        </ul>
+
         <h2>Strategic Alliances</h2>
-        <p>We have partnered with PWD Smart
+        <p>We have partnered with PWD Smart Farmability and UN WHD for the first PWD Smart Farmability Pilot Project outside Malaysia. These alliances foster innovation, sustainability, and community impact through shared knowledge and resources.</p>
+        
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Reach out to us for any inquiries or collaborations.</p>
+        <a href="contact.html" class="learn-more">Contact Us</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 CoFarmingHub. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://facebook.com/cofarminghub" target="_blank">Facebook</a>
+        <a href="https://twitter.com/cofarminghub" target="_blank">Twitter</a>
+        <a href="https://instagram.com/cofarminghub" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
