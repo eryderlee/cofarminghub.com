@@ -22,6 +22,32 @@ body {
     text-align: center;
 }
 
+/* Title styling */
+.section-title {
+    font-family: "Bebas Neue", sans-serif !important;
+    font-size: 2.5rem !important; /* Slightly smaller font size */
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1rem !important;
+    color: #000000 !important; /* Softer color */
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+}
+
+/* Impactful text styling */
+.impactful-text {
+    font-family:  sans-serif !important;
+    font-size: 2.5rem !important; /* Slightly smaller font size */
+    font-weight: 700 !important; /* Bold font weight */
+    color: #444 !important; /* Softer dark color */
+    line-height: 1.4 !important; /* Increased line height for readability */
+    text-align: center !important;
+    margin-bottom: 2rem !important; /* Space below paragraphs */
+}
+
+.impactful-text span {
+    color: #4CAF50 !important; /* Highlighted text color */
+}
 
 
 
@@ -219,14 +245,15 @@ footer .social-media a:hover {
 
 /* Photos Grid */
 .photos-grid {
+    margin-left: -10rem;
     display: grid!important;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))!important;
-    gap: 8rem!important;
+    gap: 15rem!important;
 }
 
 .photos-grid img {
-    width: 25rem!important;
-    height: 17rem!important;
+    width: 28rem!important;
+    height: 20rem!important;
     border-radius: 8px!important;
 }
 /* Team Carousel */
@@ -267,10 +294,19 @@ footer .social-media a:hover {
     text-decoration: underline;
 }
 
+.carousel-container {
+    width: 107rem!important;
+    margin-left: -18rem;
+    overflow: hidden!important;
+    position: relative!important;
+  }
+
+  
 .team-carousel {
     display: flex !important;
-    overflow-x: auto!important;
-    scroll-snap-type: x mandatory!important;
+    
+    
+    transition: transform 0.5s ease-in-out!important;
 }
 
 .team-member {
@@ -278,6 +314,8 @@ footer .social-media a:hover {
     scroll-snap-align: start!important;
     margin: 1rem!important;
     text-align: center!important;
+    box-sizing: border-box;
+    
 }
 
 .team-member img {
@@ -286,6 +324,72 @@ footer .social-media a:hover {
     border-radius: 0px!important;
     
 }
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    margin-left: -10px;
+    margin-right: -10px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    width:70px;
+    height: 320px;
+}
+
+.carousel-button.prev {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.11) 100%);    
+
+    left: 10px;
+}
+
+.carousel-button.next {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.11) 0%,  rgba(0, 0, 0, 0.7) 100%);    
+
+    right: 10px;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+}
+
+.awards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.award-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e6e6e6;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.award-item span {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.award-image {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
 /* About Section */
 .about {
     padding: 4rem 0;

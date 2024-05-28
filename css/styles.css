@@ -80,7 +80,7 @@ nav ul li a {
   
     color: #000000;
     text-decoration: none; 
-    font-size: 20px;
+    font-size: 22px;
     position: relative;
 }
 nav ul li a::after{
@@ -201,7 +201,7 @@ nav ul li a:hover::after {
     margin: 1rem 0;
 }
 
-..contact {
+.contact {
     background-color: #2c5f2d;
     color: white;
     padding: 2rem 0;
@@ -268,7 +268,7 @@ section h2 {
 }
 
 section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -303,7 +303,43 @@ section p {
 }
 
 /* Values Section */
+.quote-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem; /* Space below the container */
+}
 
+.quote-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make image circular */
+    margin-right: 1rem; /* Space between image and blockquote */
+}
+
+blockquote {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444; /* Softer dark color */
+    line-height: 1.6; /* Improved readability */
+    margin: 0;
+    padding: 0;
+    quotes: "“" "”" "‘" "’";
+}
+
+blockquote p {
+    margin: 0;
+    padding: 0;
+    quotes: inherit;
+}
+
+blockquote p:before {
+    content: open-quote;
+}
+
+blockquote p:after {
+    content: close-quote;
+}
 .values-list {
     display: flex;
     flex-wrap: wrap;
@@ -412,80 +448,3 @@ footer .social-media a:hover {
     text-decoration: underline;
 }
 
-/* Photos Grid */
-.photos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 8rem;
-}
-
-.photos-grid img {
-    width: 25rem;
-    height: 18rem;
-    border-radius: 8px;
-}
-/* Team Carousel */
-.individual-team {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.individual-team:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.individual-team img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 1rem;
-}
-
-.individual-team .description {
-    max-width: 600px;
-}
-
-.team-carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.team-member {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin: 1rem;
-    text-align: center;
-}
-
-.team-member img {
-    width: 30rem;
-    height: 20rem;
-    border-radius: 0px;
-    
-}
-/* About Section */
-.about {
-    padding: 4rem 0;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.about ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about ul li {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
