@@ -6,7 +6,6 @@
 .projects .container {
     text-align: center;
     width: 250rem;
-    
 }
 
 .projects h2 {
@@ -15,10 +14,10 @@
 }
 
 .project-box {
-    position: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Change to relative to position the pseudo-element correctly */
     width: 100rem;
-    
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-color: rgb(25, 165, 32);
     padding: 2rem;
@@ -27,6 +26,10 @@
     color: white;
     text-align: center;
     overflow: hidden; /* Ensure the overlay doesn't overflow */
+    
+}
+.project-box:hover{
+    transform: translateY(-1px) scale(1.05);
 }
 
 .project-box::before {
@@ -39,7 +42,16 @@
     background: rgba(0, 0, 0, 0.26); /* Adjust the transparency as needed */
     border-radius: 8px; /* Match the border radius of the project-box */
     z-index: 1;
+   
+    transition: background-color 0.3s ease-in-out; /* Add transition for smooth effect */
 }
+
+.project-box:hover::before {
+    background-color: rgba(0, 0, 0, 0.541); /* Apply the hover effect to the pseudo-element */
+    
+}
+
+
 
 .project-box h3 {
     margin-bottom: 1rem;
@@ -67,9 +79,7 @@
     z-index: 2;
 }
 
-.project-box .learn-more:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+
 
 /* Footer */
 footer {

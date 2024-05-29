@@ -80,7 +80,7 @@ nav ul li a {
   
     color: #000000;
     text-decoration: none; 
-    font-size: 22px;
+    font-size: 26px;
     position: relative;
 }
 nav ul li a::after{
@@ -132,6 +132,7 @@ nav ul li a:hover::after {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity and color as needed */
 }
+/* Existing CSS */
 .hero {
     position: relative;
     color: rgb(255, 255, 255);
@@ -142,9 +143,9 @@ nav ul li a:hover::after {
     align-items: center;
     width: 100%; /* Ensure it covers the full width */
     overflow: hidden; /* Ensure no scrollbars appear */
-}
-
-.hero::before {
+  }
+  
+  .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -154,18 +155,18 @@ nav ul li a:hover::after {
     background: url('../images/pexels-nc-farm-bureau-mark-2886937.jpg') no-repeat center center/cover;
     z-index: -1;
     animation: zoomIn 10s forwards;
-}
-
-@keyframes zoomIn {
+  }
+  
+  @keyframes zoomIn {
     0% {
-        transform: scale(1);
+      transform: scale(1);
     }
     100% {
-        transform: scale(1.2);
+      transform: scale(1.2);
     }
-}
-
-.hero h2 {
+  }
+  
+  .hero h2 {
     font-family: "Bebas Neue";
     font-weight: 400;
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -177,9 +178,9 @@ nav ul li a:hover::after {
     position: relative;
     z-index: 1;
     margin-top: -2rem;
-}
-
-.hero p {
+  }
+  
+  .hero p {
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
     text-align: center;
@@ -190,7 +191,45 @@ nav ul li a:hover::after {
     color: #fff;
     position: relative;
     z-index: 1;
-}
+  }
+  
+  /* New CSS */
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .scroll-down span {
+    display: block;
+    color: #fff;
+    font-family:"Bebas Neue";
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .scroll-down .arrow {
+    width: 24px;
+    height: 24px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(45deg);
+    }
+  }
+  
 
 .about, .services, .projects, .contact {
     padding: 2rem 0;
@@ -202,7 +241,7 @@ nav ul li a:hover::after {
 }
 
 .contact {
-    background-color: #2c5f2d;
+    background-color: #2c5f2d!important;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -232,7 +271,9 @@ nav ul li a:hover::after {
   .contact form .form-group {
     width: 100%;
   }
-  
+  .contact form textarea{
+    height: 100px;
+  }
   .contact form input, .contact form textarea {
     width: 100%;
     padding: 0.75rem;
@@ -403,28 +444,6 @@ blockquote p:after {
     font-size: 1rem;
 }
 
-/* Contact Section */
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact form label {
-    margin: 0.5rem 0 0.2rem;
-}
-
-.contact form input, .contact form textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.contact form button {
-    padding: 0.7rem;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
 /* Footer */
 footer {
