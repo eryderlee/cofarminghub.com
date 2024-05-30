@@ -413,12 +413,215 @@ blockquote p:after {
 
 
 /* Partners Section */
-.partners img {
-    width: 150px;
+ /* Marquee Style */
+ .marquee {
+    width: 100;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.marquee-content {
+    display: inline-block;
+    animation: marquee 80s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.marquee-content img {
+    width: 100px;
     height: auto;
-    margin: 1rem;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+.partners-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.partners-text {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+.partners-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.partners-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.black-background {
+    background-color: black; /* Change background color to black */
+    
+  }
+  /* Projects Section */
+.container.projects-section{
+    width: 10000rem!important;
+}
+.projects-section {
+    padding: 4rem 0;
+    position: relative;
+  }
+  .projects-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10rem;
+    width: 1000%;
+    height: 100%;
+    background-color: #f0f0f0;
+    z-index: -1;
+    
+    
+  }
+  
+  .projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  .projects-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .projects-images img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .projects-text {
+    max-width: 600px;
+    margin-left: 2rem;
+  }
+  .projects-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .projects-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .projects-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .projects-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  .projects-text ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .projects-text ul li:before {
+    content: '\2713';
+    margin-right: 0.5rem;
+    color: #4CAF50;
+  }
+
+  /* Products Section */
+/* Products Section */
+.products-section {
+  position: relative;
+  padding: 4rem 0;
 }
 
+.products-background {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Start from the middle */
+    left: -30rem;
+    right: 20rem; /* Extend to the right beyond the container */
+    height: 100%; /* Adjust to fit within padding */
+    background-color: #f0f0f0;
+    z-index: -1;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .products-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .products-images {
+    position: relative;
+    width: 50%; /* Adjust as needed */
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-primary {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .image-secondary {
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 60%; /* Adjust as needed */
+    width: 70%; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .products-text {
+    max-width: 600px;
+    margin-right: 2rem;
+  }
+  
+  .products-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .products-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .products-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .products-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .products-text ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .products-text ul li:before {
+    content: '\2713';
+    margin-right: 0.5rem;
+    color: #4CAF50;
+  }
+  
+  
+  
 /* News Section */
 .news-list {
     display: flex;
