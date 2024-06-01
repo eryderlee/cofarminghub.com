@@ -1,0 +1,31 @@
+.event {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.blog-embed {
+  margin-left: -25rem;
+  display: grid!important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))!important;
+  gap: 30rem!important;
+    
+}
+.blog-embed iframe {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    width: 900px;
+}
+@media only screen and (max-width: 768px) {
+    .blog-embed {
+        grid-template-columns: 1fr !important; /* Single column layout on smaller screens */
+        gap: 10rem !important; /* Adjust gap for smaller screens */
+    }
+
+    .blog-embed iframe {
+        max-width: 400px; /* Ensure full width on smaller screens */
+        height: 700px;
+        margin-left: 26rem;
+    }
+}

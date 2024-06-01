@@ -1,6 +1,6 @@
 function createNavBar() {
     const navBarHTML = `
-        
+    <header>
             <div >
                 <div class="container">
                 <div class="logo">
@@ -10,7 +10,7 @@ function createNavBar() {
                         <button id="nav-toggle" aria-label="Toggle navigation">
                             <i class="fa-solid fa-plus icon" style="color: #1fac0f;"></i>
                         </button>
-                        <ul id="nav-menu" class="collapsed">
+                        <ul id="nav-menu" class="expanded">
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="projects.html">Projects</a></li>
@@ -33,16 +33,16 @@ function createNavBar() {
     const icon = navToggle.querySelector('.icon');
 
     navToggle.addEventListener('click', function() {
-        if (navMenu.classList.contains('collapsed')) {
-            navMenu.classList.remove('collapsed');
-            navMenu.classList.add('expanded');
+        if (navMenu.classList.contains('expanded')) {
+            navMenu.classList.remove('expanded');
+            navMenu.classList.add('collapsed');
             icon.classList.remove('fa-plus');
             icon.classList.add('fa-x');
             icon.classList.add('spin');
             icon.style.color = '#ff6666'; // Change the color when the menu is expanded
         } else {
-            navMenu.classList.remove('expanded');
-            navMenu.classList.add('collapsed');
+            navMenu.classList.remove('collapsed');
+            navMenu.classList.add('expanded');
             icon.classList.remove('fa-x');
             icon.classList.add('fa-plus');
             icon.classList.add('reverse-spin');

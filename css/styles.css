@@ -95,7 +95,7 @@ nav ul.collapsed {
 }
 nav ul.expanded {
   max-height: 500px; 
-  opacity: 1;
+  
 }
 .fa-solid{
   display: none;
@@ -751,33 +751,44 @@ footer .social-media a:hover {
   }
   nav {
     top:0rem;
+    position: fixed;
     left: 0;
     width: 100%;
+    display: flex;
     padding: 10px;
+    justify-content: center; /* Center all content horizontally */
     align-items: center;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
     background-color: rgba(227, 230, 224, 0.9); /* Slightly more opaque for better readability */
 }
 
 nav button {
-    display: block; /* Show the button on mobile */
-    
+  display: block; /* Show the button on mobile */
+  position: relative;
+  z-index: 1; /* Ensure the button is on top */
+  margin: 0 auto; /* Center the button */
 }
 
 nav ul {
     flex-direction: column;
     
-    display: none; /* Hide the menu by default */
+     /* Hide the menu by default */
     width: 100%;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 nav ul.collapsed {
-    display: 0px; /* Show the menu when not collapsed */
+    max-height: 500px; /* Show the menu when not collapsed */
+    display: block;
+    background-color:rgb(160, 212, 107);
+    opacity: 1;
+    border-radius: 10px;
 }
 nav ul.expanded {
-  display: flex;
-  opacity: 1;
+  max-height: 0px;
+  opacity: 5;
+  background-color: rgba(227, 230, 224, 0.9);
+ 
 }
 
 nav ul li {
@@ -823,9 +834,7 @@ nav ul li a {
   animation: spin-to-plus 0.5s backwards;
 }
 
-#nav-menu.collapsed {
-  display: none;
-}
+
 
 #nav-menu.expanded {
   display: block;
@@ -909,16 +918,17 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden; /* Prevent horizontal overflow */
+   
 }
 
 .projects-images,
 .projects-text {
     width: 100%; /* Ensure they take up the full width of the container */
-    max-width: 600px; /* Optionally, set a maximum width to control size */
+    max-width: auto; /* Optionally, set a maximum width to control size */
     text-align: center;
     box-sizing: border-box!important; /* Include padding and border in the element's total width and height */
-    margin-left: -8rem; /* Center align */
-    padding-right: 15rem;
+    margin-left: 0; /* Center align */
+    padding-right: 0rem;
 }
 
   .products-content {
@@ -928,7 +938,7 @@ nav ul li a {
 
   .products-images,
   .products-text {
-      width: 60%;
+      width: 65%;
       text-align: center;
       
       /* Remove margin-left to avoid overflow */
@@ -937,6 +947,7 @@ nav ul li a {
   .products-images {
       margin-top: 3rem;
       margin-left: -5rem;
+      padding-bottom: 4rem;
   }
 
   .projects-background,

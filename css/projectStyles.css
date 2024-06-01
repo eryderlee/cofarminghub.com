@@ -102,3 +102,28 @@ footer .social-media a {
 footer .social-media a:hover {
     text-decoration: underline;
 }
+@media only screen and (max-width: 800px) {
+    
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        width: 100%; /* Full width on smaller screens */
+        margin: 1rem auto;
+        left: 14.5rem;
+    }
+
+    .project-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-box p {
+        font-size: 0.875rem;
+    }
+
+    .project-box .learn-more {
+        padding: 0.5rem 0.75rem;
+    }
+}
+

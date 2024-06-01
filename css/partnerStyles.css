@@ -97,3 +97,28 @@
     object-fit: contain; /* Ensure the logo fits within the specified size */
 
 }
+@media only screen and (max-width: 768px) {
+    .partner-box {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+    }
+
+    .partner-box img {
+        width: 80px; /* Adjust image size for smaller screens */
+        margin-bottom: 1rem; /* Adjust margin for stacking */
+    }
+
+    .partner-box h3 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .partner-box p {
+        font-size: 0.675rem; /* Adjust font size for smaller screens */
+    }
+
+    .partner-box .button-container a {
+        padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+    }
+}
