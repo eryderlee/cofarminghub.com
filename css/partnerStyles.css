@@ -103,6 +103,7 @@
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center content */
         text-align: center; /* Center text */
+        height: auto;
     }
 
     .partner-box img {
@@ -111,11 +112,11 @@
     }
 
     .partner-box h3 {
-        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        font-size: 1.35rem; /* Adjust font size for smaller screens */
     }
 
     .partner-box p {
-        font-size: 0.675rem; /* Adjust font size for smaller screens */
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
 
     .partner-box .button-container a {

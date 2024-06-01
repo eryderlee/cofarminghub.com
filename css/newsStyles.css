@@ -5,7 +5,9 @@
     border-radius: 8px;
 }
 .blog-embed {
-  margin-left: -25rem;
+  max-width: 1000px;
+  margin-left: -10rem;
+  width: 100%;
   display: grid!important;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))!important;
   gap: 30rem!important;
@@ -19,13 +21,18 @@
 }
 @media only screen and (max-width: 768px) {
     .blog-embed {
+        margin-left: 0;
         grid-template-columns: 1fr !important; /* Single column layout on smaller screens */
         gap: 10rem !important; /* Adjust gap for smaller screens */
+        max-width: 600px;
+        width: 100%;
+        justify-content: center; /* Center the grid */
     }
 
     .blog-embed iframe {
-        max-width: 400px; /* Ensure full width on smaller screens */
+        max-width: 600px; /* Ensure full width on smaller screens */
+        width: 100%;
         height: 700px;
-        margin-left: 26rem;
+        
     }
 }

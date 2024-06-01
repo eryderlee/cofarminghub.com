@@ -472,11 +472,40 @@ blockquote p:after {
 .value-item p {
     font-size: 1rem;
 }
-.UNSDG-Image {
-    width: 65%;
-    height: 300px;
-    border-radius: 0px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0rem auto;
+  padding: 0rem;
+  background-color: white;
+  
+  
 }
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s  ease-in-out;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* Partners Section */
@@ -648,6 +677,17 @@ blockquote p:after {
     width: 70%; /* Adjust as needed */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+  }
+  .image-third {
+    display: none;
+    position: absolute;
+    top: 17rem; /* Adjust as needed */
+    left: -2rem; /* Adjust as needed */
+    width: 70%; /* Adjust as needed */
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .products-text {
@@ -737,6 +777,10 @@ footer .social-media a {
 footer .social-media a:hover {
     text-decoration: underline;
 }
+/* Hide mobile content by default */
+.mobile-content {
+  display: none;
+}
 
 /* Media Queries for Responsive Design */
 
@@ -749,6 +793,13 @@ footer .social-media a:hover {
       margin: 0 auto; /* Ensure centered alignment */
       
   }
+  .desktop-content {
+    display: none;
+}
+.mobile-content {
+    display: block;
+}
+
   nav {
     top:0rem;
     position: fixed;
@@ -855,7 +906,7 @@ nav ul li a {
   height: auto;
 }
   .hero {
-      height: 52rem;
+      height: 100vh;
       padding: 2rem 0;
   }
 
@@ -888,10 +939,8 @@ nav ul li a {
       width: 80%;
       margin: 1rem auto;
   }
-  .UNSDG-Image {
-    width: 100%;
-    height: 300px;
-    border-radius: 0px;
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 }
 
 
@@ -911,6 +960,7 @@ nav ul li a {
     height: 30px;
     margin: 0 1rem;
     vertical-align: middle;
+    margin-bottom: 1.5rem;
   }
 
   .projects-content {
@@ -918,9 +968,12 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden; /* Prevent horizontal overflow */
+    
    
 }
-
+.projects-images{
+  padding-bottom: 2rem;
+}
 .projects-images,
 .projects-text {
     width: 100%; /* Ensure they take up the full width of the container */
@@ -929,25 +982,43 @@ nav ul li a {
     box-sizing: border-box!important; /* Include padding and border in the element's total width and height */
     margin-left: 0; /* Center align */
     padding-right: 0rem;
+    
 }
 
   .products-content {
       flex-direction: column;
       align-items: center;
+      
   }
-
-  .products-images,
   .products-text {
+    max-width: fit-content;
+    box-sizing: border-box;
+    margin-left: 2rem ;
+  }
+  .image-primary{
+    margin-left: 0rem;
+  }
+  .image-secondary{
+    margin-left: 0rem;
+  }
+  .image-third{
+    left:-15px;
+    display:block;
+    
+  }
+  .products-images
+  {
+    
       width: 65%;
       text-align: center;
-      
+      box-sizing: border-box;
       /* Remove margin-left to avoid overflow */
   }
 
   .products-images {
       margin-top: 3rem;
       margin-left: -5rem;
-      padding-bottom: 4rem;
+      padding-bottom: 10rem;
   }
 
   .projects-background,

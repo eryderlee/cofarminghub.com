@@ -77,21 +77,30 @@
 @media only screen and (max-width: 768px) {
     .product-grid {
         gap: 1.5rem; /* Adjust gap for smaller screens */
+        justify-content: center; /* Center the grid */
+    align-items: center; /* Center the grid vertically */
+    max-width: 100%;
     }
 
     .product-card {
         padding: 1.5rem; /* Adjust padding for smaller screens */
         max-width: 100%; /* Ensure full width on smaller screens */
+        height: 23rem;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .product-card h3 {
-        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     .product-card p {
-        font-size: 0.875rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
     }
-
+    .learn-more{
+        padding-top: 30rem;
+    }
     .product-card .learn-more {
         padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
     }

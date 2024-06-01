@@ -1,25 +1,25 @@
 function createNavBar() {
     const navBarHTML = `
-    <header>
+        <header>
             <div >
                 <div class="container">
-                <div class="logo">
-                        <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
-                    </div>
-                    <nav>
-                        <button id="nav-toggle" aria-label="Toggle navigation">
-                            <i class="fa-solid fa-plus icon" style="color: #1fac0f;"></i>
-                        </button>
-                        <ul id="nav-menu" class="expanded">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="partners.html">Partners</a></li>
-                            <li><a href="news.html">News & Events</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
+                        <div class="logo">
+                            <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="CoFarmingHub Logo">
+                        </div>
+                        <nav>
+                            <button id="nav-toggle" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-plus icon" style="color: #1fac0f;"></i>
+                            </button>
+                            <ul id="nav-menu" class="expanded">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="partners.html">Partners</a></li>
+                                <li><a href="news.html">News & Events</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
                 </div>
             </div>
         </header>
