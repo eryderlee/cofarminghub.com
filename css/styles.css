@@ -46,14 +46,14 @@ nav {
     position: fixed; 
     top: 10px;
     left: 30rem;
-
+    max-width: 960px;
     
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 50%; /* Adjust this value as needed */
+    width: 100%; /* Adjust this value as needed */
     background-color: rgba(227, 230, 224, 0.295);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
@@ -554,9 +554,7 @@ blockquote p:after {
     
   }
   /* Projects Section */
-.container.projects-section{
-    width: 10000rem!important;
-}
+
 .projects-section {
     padding: 4rem 0;
     position: relative;
@@ -565,7 +563,7 @@ blockquote p:after {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 25rem;
+    margin-left: 29rem;
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
@@ -945,15 +943,27 @@ nav ul li a {
 
 
   .partners-section {
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    
   }
 
   .partners-text {
       margin: 1rem 0;
       text-align: center;
+      max-width: 100%;
   }
   .marquee{
+    
     width:100%;
+  }
+  .marquee-content{
+    
+    
+    
+   
   }
   .marquee-content img {
     width: auto;
@@ -1008,7 +1018,6 @@ nav ul li a {
   }
   .products-images
   {
-    
       width: 65%;
       text-align: center;
       box-sizing: border-box;

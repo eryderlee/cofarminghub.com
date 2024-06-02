@@ -7,10 +7,12 @@
             color: #333;
         }
         header {
+            font-family: "Bebas Neue";
             background-color: #6aa84f;
             color: white;
             padding: 1em 0;
             text-align: center;
+            font-size: 1.5rem;
         }
         .container {
             width: 80%;
@@ -37,6 +39,7 @@
             margin: 20px 0;
         }
         .section-title {
+            
             border-bottom: 2px solid #6aa84f;
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -66,6 +69,25 @@
         .back-button:hover {
             background: #0e0303;
         }
+        .visual-representation {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .visual-representation img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .steps {
+            list-style-type: decimal;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
         .footer {
             text-align: center;
             padding: 20px;
@@ -73,7 +95,26 @@
             color: white;
         }
         .video-container{
-            width: 10px;
-            height: 400px;
+            width: 100%; /* Use 100% width to make it responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 1200px; /* Optional: set a max width */
+        
+        }
+        .video-container video {
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+        }
+        
+
+        @media only screen and (max-width: 800px)  {
+            .video-container {
+                max-width: 600px; /* Optional: set a max width for larger screens */
+            }
+            .video{
+                max-width: 600px;
+                width:100%;
+            }
         }
     
