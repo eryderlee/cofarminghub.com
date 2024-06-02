@@ -45,7 +45,7 @@ body {
 nav {
     position: fixed; 
     top: 10px;
-    left: 30rem;
+    left: 27rem;
     max-width: 960px;
     
     z-index: 1000;
@@ -563,8 +563,8 @@ blockquote p:after {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 29rem;
-    width: 100%;
+    margin-left: 25rem;
+    width: 90%;
     height: 100%;
     background-color: #f0f0f0;
     z-index: -1;
