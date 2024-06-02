@@ -563,7 +563,7 @@ blockquote p:after {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 25rem;
+    margin-left: 30rem;
     width: 90%;
     height: 100%;
     background-color: #f0f0f0;
