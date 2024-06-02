@@ -45,7 +45,7 @@ body {
 nav {
     position: fixed; 
     top: 10px;
-    left: 27rem;
+    left: 30rem;
     max-width: 960px;
     
     z-index: 1000;
