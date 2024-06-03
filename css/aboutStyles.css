@@ -157,6 +157,8 @@ footer .social-media a:hover {
 }
 
 .individual-team .description {
+    align-self: center;
+    margin: auto;
     max-width: 600px;
 }
 
