@@ -1009,11 +1009,11 @@ nav ul li a {
     margin-left: 0rem;
   }
   .image-secondary{
-    margin-left: 0rem;
+    margin-left: -1rem;
   }
   .image-third{
     left:-15px;
-    display:block;
+    display:none;
     
   }
   .products-images
