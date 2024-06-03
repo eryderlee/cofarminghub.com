@@ -265,9 +265,33 @@
  
 
   <script src="js/animationOnScroll"></script>
+  <script>
+  window.addEventListener('load', () => {
+    const boundSection = document.querySelector('.hero-container');
+    const nav = document.getElementById('nav');
+    
+    if (boundSection && nav) {
+      const boundWidth = boundSection.offsetWidth;
+      const boundLeft = boundSection.offsetLeft;
   
-
-
+      nav.style.width = `${boundWidth}px`;
+      nav.style.left = `${boundLeft}px`;
+    }
+  });
+  
+  window.addEventListener('resize', () => {
+    const boundSection = document.querySelector('.hero-container');
+    const nav = document.getElementById('nav');
+    
+    if (boundSection && nav) {
+      const boundWidth = boundSection.offsetWidth;
+      const boundLeft = boundSection.offsetLeft;
+  
+      nav.style.width = `${boundWidth}px`;
+      nav.style.left = `${boundLeft}px`;
+    }
+  });
+</script>
  <script src="js/navbar.js"></script>
 
 

@@ -114,15 +114,24 @@ footer .social-media a:hover {
 
 /* Photos Grid */
 .photos-grid {
-    margin-left: -10rem;
+    
+    max-width:1550px;
+    width: calc(100% - 20rem); /* Adjust width to account for left margin */
+   margin-left: 10rem;
+   margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
     display: grid!important;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))!important;
-    gap: 15rem!important;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))!important;
+    gap: 5rem!important;
+    box-sizing: border-box; 
+    
 }
 
 .photos-grid img {
-    width: 28rem!important;
-    height: 20rem!important;
+    width: 100%!important;
+    max-height: 20rem;
+    height: auto!important;
     border-radius: 8px!important;
     
 }
@@ -166,10 +175,11 @@ footer .social-media a:hover {
 }
 
 .carousel-container {
-    width: 107rem!important;
-    margin-left: -18rem;
+    max-width: inherit;
+    
     overflow: hidden!important;
     position: relative!important;
+    align-self: center;
   }
 
   .team-carousel {
@@ -307,7 +317,10 @@ footer .social-media a:hover {
         margin-left: 0rem;
     }
     .photos-grid {
-        margin-left: 0rem;
+        width: 100%;
+        padding-left: 1rem; /* Remove left padding on mobile */
+        padding-right: 1rem; /* Ensure no right padding on mobile */
+        margin: 0 auto; /* Center the container horizontally */
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
         gap: 1rem !important;
         align-items: center;

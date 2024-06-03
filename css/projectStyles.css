@@ -5,7 +5,9 @@
 
 .projects .container {
     text-align: center;
-    width: 250rem;
+    width: 100%; /* Change to 100% to make it responsive */
+    max-width: 1650px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
 }
 
 .projects h2 {
@@ -16,12 +18,13 @@
 .project-box {
     transition: transform 0.3s ease-in-out;
     position: relative; /* Change to relative to position the pseudo-element correctly */
-    width: 100rem;
+    width: 100%; /* Change to a percentage to make it responsive */
+    max-width: 100rem; /* Set a maximum width */
     background-size: cover;
     background-position: center;
     background-color: rgb(25, 165, 32);
     padding: 2rem;
-    margin: 1rem -14.5rem !important;
+    margin: 1rem auto !important;
     border-radius: 8px;
     color: white;
     text-align: center;
@@ -108,11 +111,7 @@ footer .social-media a:hover {
         font-size: 2rem;
     }
 
-    .project-box {
-        width: 100%; /* Full width on smaller screens */
-        margin: 1rem auto;
-        left: 14.5rem;
-    }
+    
 
     .project-box h3 {
         font-size: 1.5rem;
