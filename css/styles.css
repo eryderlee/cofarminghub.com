@@ -398,6 +398,13 @@ section p {
 }
 
 /* About Section */
+ .elementor-widget-container{
+  --e-transform-rotateZ: 118.8deg;
+  transform: perspective(var(--e-transform-perspective,0)) rotate(var(--e-transform-rotateZ,0)) rotateX(var(--e-transform-rotateX,0)) rotateY(var(--e-transform-rotateY,0)) translate(var(--e-transform-translate,0)) translateX(var(--e-transform-translateX,0)) translateY(var(--e-transform-translateY,0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX,0)) skewY(var(--e-transform-skewY,0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);--container-widget-width: 17vw;
+  --container-widget-flex-grow: 0;--flex-direction: initial;
+ 
+ }
 .about-details {
     display: flex;
     flex-wrap: wrap;
@@ -411,6 +418,24 @@ section p {
     width: 45%;
     height: 300px;
     border-radius: 8px;
+}
+
+.about-text-card {
+  position: relative;
+  padding: 2rem;
+  border-radius:8px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline-color: #2c5f2d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.about-text-card:hover {
+  transform: transform(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Values Section */

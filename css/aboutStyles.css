@@ -46,7 +46,60 @@
     color: #388E3C; /* Darker green on hover */
 }
 
-
+.why-us {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .why-us-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .why-us-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .why-us-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .why-us-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  .why-us-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .why-us-text {
+    margin-top: 3rem;
+    font-size: 1.2rem!important;
+    color: #313131;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
 
@@ -159,11 +212,13 @@ footer .social-media a:hover {
 .individual-team .description {
     align-self: center;
     margin: auto;
+    
     max-width: 600px;
 }
 
 .individual-team .description p {
     margin: 0.5rem 0;
+    color: #313131;
 }
 
 .individual-team .description a {
