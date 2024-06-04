@@ -772,6 +772,7 @@ footer .social-media a:hover {
     width: 90%;
   }
 }
+
 .image-primary, .image-secondary{
   width: 70%;
     margin-left: 0rem;
@@ -785,6 +786,7 @@ footer .social-media a:hover {
     margin-left: 20rem;
     width: 80%;
   }
+ 
 }
 
 @media (max-width: 992px) {
@@ -1084,6 +1086,11 @@ nav ul li a {
     max-height: 35rem;
     height: 20rem;
   }
+  .about-image {
+    width: 100%;
+    height: auto;
+}
+
   .container {
       width: 100%;
       padding: 0 0.5rem;
