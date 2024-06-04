@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Co-Farming Hub: Contact Us</title>
   <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="../css/animate.css">
   <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -13,7 +14,14 @@
     .animated-item {
         opacity: 0; /* Make elements invisible initially */
     }
-</style>
+    .contact p{
+      font-size: 1.25rem!important;
+    }
+    .contact h2{
+      font-size: 3rem!important;
+    }
+  </style>
+
 </head>
 <body>
   <header>
@@ -48,9 +56,9 @@
   <main>
     <section class="contact">
       <div class="container">
-        <h2>Register Your Interest In Becoming Our Impact Partner</h2>
-        <p>We are open to any healthy collaboration with organisations that are aligned with our advocacies. Kindly fill in the form below, and we'll get back to you as soon as we can.</p>
-        <form action="submit-contact-form.php" method="POST">
+        <h2>Join Us!</h2>
+        <p>Be part of the movement to create a sustainable future. Whether you are an individual, a business, or a community organization, there are many ways to get involved with CoFarmingHub. Together, we can cultivate a brighter, more sustainable future for all.</p>
+        <form action="../php/submit-contact-form.php" method="POST">
           <div class="form-group">
             <input type="text" id="name" name="name" placeholder="Name" required>
           </div>
@@ -78,11 +86,10 @@
       </div>
     
   </main>
+
   <footer>
     <div class="container">
-      <div class="animated-item" data-animation="fadeInUp" style="animation-duration: 1s;">
-        <p>&copy; 2024 Co-Farming Hub. All rights reserved. ABN: 73 619 371 470 </p>
-      </div>
+      <p>&copy; 2024 Co-Farming Hub. All rights reserved. ABN: 73 619 371 470 </p>
       
       <div class="social-media">
         <a href="https://facebook.com/Co-Farming Hub" target="_blank">Facebook</a>
@@ -93,6 +100,7 @@
       
     </div>
   </footer>
+  
   <script src="js/animationOnScroll"></script>
   <script src="js/navbar.js"></script>
   <script src="../js/subNavbar.js"></script>

@@ -2,6 +2,10 @@
 .projects {
     padding: 4rem 0;
 }
+.projects p {
+    color: white;
+}
+
 
 .projects .container {
     text-align: center;

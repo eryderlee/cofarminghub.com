@@ -1,11 +1,13 @@
 .container{
     max-width: 1600px!important;
 }
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
     gap: 6rem;
     margin-top: 2rem;
+    
     width: 100%;
 }
 .product-card {
@@ -14,7 +16,7 @@
     background-position: center;
     padding: 5rem;
     width: auto;
-    height:auto;
+    height: 30rem;
     border-radius: 8px;
     color: white;
     text-align: center;
@@ -46,6 +48,7 @@
     z-index: 2;
     transition: opacity 0.3s ease-in-out;
     width: 100%;
+    color: white;
 }
 .learn-more {
     position: absolute;
