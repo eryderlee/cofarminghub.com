@@ -1,29 +1,41 @@
 <?php
-// Retrieve the form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$contact = $_POST['contact'];
-$message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect the form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $contact = htmlspecialchars($_POST['contact']);
+    $message = htmlspecialchars($_POST['message']);
 
-// Set the recipient email address
-$to = "eden@ryderlee.me";
+    // Email configuration
+    $to = 'your-email@example.com';
+    $subject = 'New Contact Form Submission';
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-type: text/html\r\n";
 
-// Construct the email subject and body
-$subject = "New Contact Form Submission for cofarminghub";
-$body = "Name: $name\n";
-$body .= "Email: $email\n";
-$body .= "Contact: $contact\n";
-$body .= "Message:\n$message";
+    // Email content
+    $body = "
+        <html>
+        <head>
+            <title>New Contact Form Submission</title>
+        </head>
+        <body>
+            <h2>Contact Form Submission</h2>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Contact:</strong> $contact</p>
+            <p><strong>Message:</strong><br>$message</p>
+        </body>
+        </html>
+    ";
 
-// Set the email headers
-$headers = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
-
-// Send the email
-if (mail($to, $subject, $body, $headers)) {
-    echo "Email sent successfully!";
+    // Send the email
+    if (mail($to, $subject, $body, $headers)) {
+        echo 'Thank you for contacting us. We will get back to you shortly.';
+    } else {
+        echo 'Sorry, there was an error sending your message. Please try again later.';
+    }
 } else {
-    echo "Failed to send email.";
+    echo 'Invalid request method.';
 }
 ?>
