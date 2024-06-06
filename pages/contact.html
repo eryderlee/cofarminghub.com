@@ -54,12 +54,14 @@
     </div>
   </header>
   <main>
-    <!--netlify-->
+    <!--action="../php/submit-contact-form.php" method="POST"-->
     <section class="contact">
       <div class="container">
         <h2>Join Us!</h2>
         <p>Be part of the movement to create a sustainable future. Whether you are an individual, a business, or a community organization, there are many ways to get involved with CoFarmingHub. Together, we can cultivate a brighter, more sustainable future for all.</p>
         <form id="contact-form" action="/netlify/functions/submit-contact-form" method="POST">
+
+        <form name="contact" netlify>
           <div class="form-group">
             <input type="text" id="name" name="name" placeholder="Name" required>
           </div>
