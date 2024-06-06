@@ -414,12 +414,14 @@ section h2 {
     font-family: "Bebas Neue";
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    
 }
 
 section p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: #313131;
+    z-index: 1;
 }
 
 .learn-more {
@@ -435,22 +437,45 @@ section p {
 .learn-more:hover {
     background-color: #45a049;
 }
+/* background images */
+.background-image-container-leafs1 {
+  position: absolute;
+  left: 0;
+  top: 75rem;
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 138.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 10vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+}
+.background-image-container-leafs2 {
+  position: absolute;
+  left: 85vw; /* Adjusted to be within the viewport width */
+  top: 90rem; /* Adjusted to be within the viewport height */
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 68.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 5vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+}
 
 /* About Section */
- .elementor-widget-container{
-  --e-transform-rotateZ: 118.8deg;
-  transform: perspective(var(--e-transform-perspective,0)) rotate(var(--e-transform-rotateZ,0)) rotateX(var(--e-transform-rotateX,0)) rotateY(var(--e-transform-rotateY,0)) translate(var(--e-transform-translate,0)) translateX(var(--e-transform-translateX,0)) translateY(var(--e-transform-translateY,0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX,0)) skewY(var(--e-transform-skewY,0));
-  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);--container-widget-width: 17vw;
-  --container-widget-flex-grow: 0;--flex-direction: initial;
- 
- }
  .about {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, #eaebe5, #ffffff);
+  z-index: 0;
 }
 
-
+.about p{
+  z-index: 1;
+}
 .bold {
   
   
@@ -469,6 +494,7 @@ section p {
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .about-image {
@@ -477,6 +503,7 @@ section p {
   border-radius: 8px;
   margin-top: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1;
 }
 
 
@@ -488,6 +515,7 @@ section p {
 .about-story {
   margin-top: 3rem;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .about-story h3 {
