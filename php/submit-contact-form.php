@@ -1,4 +1,11 @@
 <?php
+// Enable error logging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+header('Content-Type: application/json');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect the form data
     $name = htmlspecialchars($_POST['name']);
@@ -31,11 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo 'Thank you for contacting us. We will get back to you shortly.';
+        echo json_encode(['success' => true, 'message' => 'Thank you for contacting us. We will get back to you shortly.']);
     } else {
-        echo 'Sorry, there was an error sending your message. Please try again later.';
+        // Log the error message
+        error_log('Mail failed to send');
+        echo json_encode(['success' => false, 'message' => 'Sorry, there was an error sending your message. Please try again later.']);
     }
 } else {
-    echo 'Invalid request method.';
+    echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
 }
 ?>
