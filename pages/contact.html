@@ -111,7 +111,7 @@
           event.preventDefault(); // Prevent the default form submission
 
           grecaptcha.enterprise.ready(async () => {
-              const token = await grecaptcha.enterprise.execute('your_site_key', { action: 'submit' }); // Replace 'your_site_key' with your actual Site Key
+              const token = await grecaptcha.enterprise.execute('6Le94_IpAAAAAJ1TanfuHauvbGfb2hVSScH7qE4o', { action: 'submit' }); // Replace 'your_site_key' with your actual Site Key
 
               if (!token) {
                   const feedback = document.getElementById('form-feedback');
