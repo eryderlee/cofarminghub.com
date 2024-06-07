@@ -1415,7 +1415,7 @@ nav ul li a {
 @media (max-width: 621px) {
   .products-images img {
     margin-top: 3rem;
-    max-width: 50%; /* Ensure images are responsive */
+     /* Ensure images are responsive */
     max-height: 35rem;
     height: 20rem;
   }
