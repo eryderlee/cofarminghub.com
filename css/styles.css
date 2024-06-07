@@ -541,10 +541,10 @@ section p {
 }
 .background-image-container-misc2 {
   position: absolute;
-  left: 85vw; /* Adjusted to be within the viewport width */
+  left: 83vw; /* Adjusted to be within the viewport width */
   top: 240rem; /* Adjusted to be within the viewport height */
   z-index: 0; /* Ensure the image is in the background */
-  --e-transform-rotateZ: 346.8deg;
+  --e-transform-rotateZ: 0deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
   transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
@@ -579,6 +579,10 @@ section p {
   text-align: center;
   background: linear-gradient(to bottom, #eaebe5, #ffffff);
   z-index: 0;
+}
+
+.about h2{
+
 }
 
 #about-text2{
@@ -1095,8 +1099,14 @@ footer .social-media a:hover {
   }
   /* background images */
 .background-image-container-leafs1 {
- top: 52rem
+ top: 52rem;
+ display:none;
  
+}
+.background-image-container-leafs3 {
+  top: 51rem;
+  --e-transform-rotateZ: 322.8deg;
+  display: none;
 }
 .background-image-container-leafs2 {
   top: 136rem;
@@ -1112,11 +1122,7 @@ footer .social-media a:hover {
 .background-image-container-leafs4 img{
  width: 14vw;
 }
-.background-image-container-leafs3 {
-  top: 51rem;
-  --e-transform-rotateZ: 322.8deg;
-  
-}
+
 .background-image-container-leafs5 {
   top: 322rem;
   display: none;
@@ -1357,7 +1363,7 @@ nav ul li a {
 .products-images img {
   margin-top: 3rem;
   max-width: 100%; /* Ensure images are responsive */
-  min-width: 14rem;
+  min-width: 10rem;
   max-height: 35rem;
   height: 25rem;
   width:auto
