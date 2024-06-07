@@ -66,11 +66,17 @@
     background-color: #f7f7f7;
     border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
   }
+  
+  .why-us-card:hover {
+    transform: translateY(-10px); /* Move the card up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  }
+  
   .why-us-card p {
     color: #313131;
   }
-  
   
   .why-us-icon {
     width: 50px;
@@ -85,14 +91,14 @@
   }
   
   .why-us-text {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
     margin-top: 1rem;
   }
 
 
 
 .minihero {
-    background: url('../images/header-bg-copyright.jpg') no-repeat center center/cover;
+    background: url('../images/header-bg-copyright.webp') no-repeat center center/cover;
     position: relative;
     width: 100%;
     height: 200px; /* Adjust height as needed */display: flex;
@@ -185,6 +191,12 @@ footer .social-media a:hover {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.individual-team:hover {
+    transform: scale(1.05); /* Slightly scale up the element on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
 .individual-team:nth-child(even) {
     flex-direction: row-reverse;

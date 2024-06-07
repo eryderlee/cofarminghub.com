@@ -4,7 +4,7 @@ function createNavBar() {
             <div >
                 <div class="container">
                         <div class="logo">
-                            <img src="../images/WhatsApp_Image_2024-05-02_at_15.22.29_7edcdab9-removebg-preview.png" alt="Co-Farming Hub Logo">
+                            <img src="../images/CoFarming hub logo.webp" alt="Co-Farming Hub Logo">
                         </div>
                         <nav>
                             <button id="nav-toggle" aria-label="Toggle navigation">

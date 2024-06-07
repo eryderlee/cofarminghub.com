@@ -173,7 +173,7 @@ nav ul li a:hover::after {
 
 
 .minihero {
-    background: url('../images/header-bg-copyright.jpg') no-repeat center center/cover;
+    background: url('../images/header-bg-copyright.webp') no-repeat center center/cover;
     position: relative;
     width: 100%;
     height: 200px; /* Adjust height as needed */display: flex;
@@ -440,10 +440,11 @@ section p {
 /* background images */
 .background-image-container-leafs1 {
   position: absolute;
+  
   left: 0;
-  top: 75rem;
+  top: 65rem;
   z-index: 0; /* Ensure the image is in the background */
-  --e-transform-rotateZ: 138.8deg;
+  --e-transform-rotateZ: 142.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
   transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
@@ -451,20 +452,127 @@ section p {
   --container-widget-flex-grow: 10;
   --flex-direction: initial;
 }
+.background-image-container-leafs1 img {
+  width: 14vw;
+}
 .background-image-container-leafs2 {
   position: absolute;
   left: 85vw; /* Adjusted to be within the viewport width */
-  top: 90rem; /* Adjusted to be within the viewport height */
+  top: 100rem; /* Adjusted to be within the viewport height */
+  width: auto;
   z-index: 0; /* Ensure the image is in the background */
   --e-transform-rotateZ: 68.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+ 
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+}
+.background-image-container-leafs2 img {
+  width: 13vw;
+}
+
+.background-image-container-leafs4 {
+  position: absolute;
+  left: 0;
+  top: 125rem;
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 248.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 10vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+}
+.background-image-container-leafs4 img {
+  width: 12vw;
+}
+.background-image-container-leafs3 {
+  position: absolute;
+  left: 85vw; /* Adjusted to be within the viewport width */
+  top: 165rem; /* Adjusted to be within the viewport height */
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 348.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
   transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
   --container-widget-width: 5vw;
   --container-widget-flex-grow: 10;
   --flex-direction: initial;
+  height: auto;
 }
-
+.background-image-container-leafs3 img {
+  width: 14vw;
+}
+.background-image-container-leafs5 {
+  position: absolute;
+  left: 0;
+  top: 205rem;
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 208.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 10vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+  height: auto;
+}
+.background-image-container-leafs5 img {
+  width: 12vw;
+}
+.background-image-container-leafs6 {
+  position: absolute;
+  left: 88vw;
+  top: 205rem;
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 48.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 10vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+}
+.background-image-container-leafs6 img {
+  width: 12vw;
+}
+.background-image-container-misc2 {
+  position: absolute;
+  left: 85vw; /* Adjusted to be within the viewport width */
+  top: 240rem; /* Adjusted to be within the viewport height */
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 346.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 5vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+  height: auto;
+}
+.background-image-container-misc2 img {
+  width: 17vw;
+}
+.background-image-container-misc1 {
+  position: absolute;
+  left: 0;
+  top: 290em;
+  z-index: 0; /* Ensure the image is in the background */
+  --e-transform-rotateZ: 358.8deg;
+  transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+  transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+  --container-widget-width: 10vw;
+  --container-widget-flex-grow: 10;
+  --flex-direction: initial;
+  height: auto;
+}
+.background-image-container-misc1 img {
+  width: 12vw;
+}
 /* About Section */
  .about {
   padding: 2rem 0;
@@ -473,8 +581,10 @@ section p {
   z-index: 0;
 }
 
-.about p{
+#about-text2{
+  position: relative;
   z-index: 1;
+  background-color: transparent!important;
 }
 .bold {
   
@@ -583,6 +693,7 @@ section p {
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Make image circular */
     margin-right: 1rem; /* Space between image and blockquote */
+    z-index: 3;
 }
 
 blockquote {
@@ -619,12 +730,20 @@ blockquote p:after {
 }
 
 .value-item {
-    width: 30%;
-    min-width: 200px;
-    padding: 1rem;
-    background-color: #f7f7f7;
-    border-radius: 8px;
+  width: 30%;
+  min-width: 200px;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.value-item:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transform: scale(1.05); /* Slightly scale the element */
+}
+
 
 .value-item h3 {
     font-size: 1.5rem;
@@ -704,6 +823,7 @@ blockquote p:after {
 .partners-text {
     max-width: 600px;
     margin-left: 2rem;
+    z-index: 1;
 }
 .partners-text h2 {
     font-size: 2rem;
@@ -950,12 +1070,6 @@ footer .social-media a:hover {
  
 }
 
-@media (max-width: 992px) {
-  .projects-background {
-    margin-left: 10rem;
-    width: 70%;
-  }
-}
 
 @media (max-width: 768px) {
   .projects-background {
@@ -978,6 +1092,48 @@ footer .social-media a:hover {
       margin: 0 auto; /* Ensure centered alignment */
       
   }
+  /* background images */
+.background-image-container-leafs1 {
+ top: 52rem
+ 
+}
+.background-image-container-leafs2 {
+  top: 136rem;
+  --e-transform-rotateZ: 34.8deg;
+  display: none;
+}
+
+.background-image-container-leafs4 {
+  top: 134rem;
+  --e-transform-rotateZ: 214.8deg;
+  display: none;
+}
+.background-image-container-leafs4 img{
+ width: 14vw;
+}
+.background-image-container-leafs3 {
+  top: 51rem;
+  --e-transform-rotateZ: 322.8deg;
+  
+}
+.background-image-container-leafs5 {
+  top: 322rem;
+  display: none;
+}
+.background-image-container-leafs6 {
+  display: none;
+  top: 322rem;
+  --e-transform-rotateZ: 34.8deg;
+}
+
+.background-image-container-misc2 {
+  width: auto!important;
+  height: auto!important;
+}
+.background-image-container-misc1 {
+  width: auto!important;
+  height: auto!important;
+}
   .desktop-content {
     display: none;
 }
@@ -1239,6 +1395,22 @@ nav ul li a {
   }
 
 }
+@media (max-width: 1047px) {
+  .background-image-container-leafs2 {
+    top: 130rem;
+    --e-transform-rotateZ: 34.8deg;
+  }
+  
+  .background-image-container-leafs4 {
+    top: 128rem;
+    --e-transform-rotateZ: 214.8deg;
+  }
+  .background-image-container-leafs4 img{
+   width: 14vw;
+  }
+  
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 621px) {
   .products-images img {
@@ -1254,7 +1426,27 @@ nav ul li a {
 .story-content img{
   flex:none;
 }
+.background-image-container-leafs2 {
+  top: 152rem;
+  --e-transform-rotateZ: 34.8deg;
+}
 
+.background-image-container-leafs4 {
+  top: 152rem;
+  --e-transform-rotateZ: 214.8deg;
+}
+.background-image-container-leafs4 img{
+ width: 14vw;
+}
+
+.background-image-container-leafs5 {
+  top: 362rem
+}
+.background-image-container-leafs6 {
+  
+  top: 386rem;
+  --e-transform-rotateZ: 34.8deg;
+}
   .container {
       width: 100%;
       padding: 0 0.5rem;

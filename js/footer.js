@@ -8,7 +8,7 @@ function createFooter() {
             <a href="https://twitter.com/Co-FarmingHub" target="_blank">Twitter</a>
             <a href="https://instagram.com/Co-FarmingHub" target="_blank">Instagram</a>
         </div>
-        <p style= "margin-top: 1rem;" >Design by <a href="https://www.linkedin.com/in/eden-lee-6016a4300/" target="_blank">Eden Lee</a></p>
+        <p style="margin-top: 1rem;"> Website fully design and developed by <a href="https://www.linkedin.com/in/eden-lee-6016a4300/" target="_blank" style="font-weight: bold; color: #ADD8E6;">Eden Lee</a> ❤️</p>
     </div>
 </footer>
 `;
