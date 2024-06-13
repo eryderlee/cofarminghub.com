@@ -25,16 +25,22 @@
     max-width: 1200px; /* Maximum width for better readability */
     margin-left: auto; /* Center align text */
     margin-right: auto; /* Center align text */
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    padding: 1rem 2rem; /* Add padding for a better look */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #f0f0f0; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Subtle gradient */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .impactful-text span {
     color: #4CAF50; /* Highlighted text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
-.impactful-text:hover{
+
+.impactful-text:hover {
     transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(135deg, #f9f9f9, #e9e9e9); /* Slightly darker gradient on hover */
 }
 
 /* Optional: Adding a subtle transition effect */
@@ -45,6 +51,7 @@
 .impactful-text span:hover {
     color: #388E3C; /* Darker green on hover */
 }
+
 
 .why-us {
     padding: 2rem 0;
@@ -137,27 +144,6 @@
 
 
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer .social-media {
-    margin-top: 1rem;
-}
-
-footer .social-media a {
-    color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
-
-footer .social-media a:hover {
-    text-decoration: underline;
-}
 
 /* Photos Grid */
 .photos-grid {

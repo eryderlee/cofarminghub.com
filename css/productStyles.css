@@ -113,3 +113,13 @@
         padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
     }
 }
+@media  (max-width: 400px) {
+    .product-card {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        max-width: 95vw; /* Ensure full width on smaller screens */
+        height: 20rem;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
