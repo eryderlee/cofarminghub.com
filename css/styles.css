@@ -8,11 +8,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
+
 .animated-item {
   opacity: 0; /* Make elements invisible initially */
 }
@@ -37,6 +39,15 @@ body {
     transform: translateX(-90%);
     border-radius: 5px;
     left: 170px;
+}
+
+.dark-mode-switch {
+  position: fixed;
+  top: 24px;
+  right: 20px; /* Use right to ensure it stays within the screen */
+  z-index: 10000;
+  border-radius: 5px;
+  transform: translateX(0); /* Ensure it stays within the screen */
 }
 
 .logo img {
@@ -122,6 +133,19 @@ nav ul li a {
     font-size: 26px;
     position: relative;
 }
+
+nav ul li b {
+  font-family: "Bebas Neue";
+  font-weight: 300;
+
+  color: #000000;
+  text-decoration: none; 
+  font-size: 23px;
+  position: relative;
+}
+
+
+
 nav ul li a::after{
     content:'';
     width: 0;
@@ -162,6 +186,7 @@ nav ul li a:hover::after {
   }
 }
 
+
 /* Apply animation when changing states */
 .spin {
   animation: spin-to-x 0.5s forwards;
@@ -173,7 +198,7 @@ nav ul li a:hover::after {
 
 
 .minihero {
-    background: url('../images/header-bg-copyright.webp') no-repeat center center/cover;
+    background: url('../images/header-bg-copyright.webp') no-repeat center center/cover!important;
     position: relative;
     width: 100%;
     height: 200px; /* Adjust height as needed */display: flex;
@@ -208,17 +233,23 @@ nav ul li a:hover::after {
 /* Existing CSS */
 /* Existing CSS */
 .hero {
-  position: relative;
+  position: fixed;
   color: rgb(255, 255, 255);
   text-align: center;
   height: 100vh; /* Ensure the section covers the full viewport height */
+  top:0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; /* Ensure the text and scroll down are vertically aligned */
   width: 100%; /* Ensure it covers the full width */
-  overflow: hidden; /* Ensure no scrollbars appear */
+   /* Ensure no scrollbars appear */
+  
 }
+section.hero{
+  z-index:1!important;
+}
+
 
 .hero::before {
   content: "";
@@ -339,6 +370,8 @@ nav ul li a:hover::after {
   }
 }
 .about, .services, .projects, .contact {
+  position: relative;
+  z-index: 2;
     padding: 2rem 0;
     text-align: center;
 }
@@ -407,7 +440,23 @@ nav ul li a:hover::after {
 
 /* Section Styles */
 section {
+  background-color: white;
     padding: 4rem 0;
+}
+.partners{
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+.products{
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+.news{
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
 
 section h2 {
@@ -440,10 +489,11 @@ section p {
 /* background images */
 .background-image-container-leafs1 {
   position: absolute;
+  background: none;
   
   left: 0;
   top: 65rem;
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 142.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -453,6 +503,7 @@ section p {
   --flex-direction: initial;
 }
 .background-image-container-leafs1 img {
+  z-index: 100000;
   width: 14vw;
 }
 .background-image-container-leafs2 {
@@ -460,7 +511,7 @@ section p {
   left: 85vw; /* Adjusted to be within the viewport width */
   top: 100rem; /* Adjusted to be within the viewport height */
   width: auto;
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 68.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -476,8 +527,8 @@ section p {
 .background-image-container-leafs4 {
   position: absolute;
   left: 0;
-  top: 125rem;
-  z-index: 0; /* Ensure the image is in the background */
+  top: 115rem;
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 248.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -493,7 +544,7 @@ section p {
   position: absolute;
   left: 85vw; /* Adjusted to be within the viewport width */
   top: 165rem; /* Adjusted to be within the viewport height */
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 348.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -510,7 +561,7 @@ section p {
   position: absolute;
   left: 0;
   top: 205rem;
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 208.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -527,7 +578,7 @@ section p {
   position: absolute;
   left: 88vw;
   top: 205rem;
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 48.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -543,7 +594,7 @@ section p {
   position: absolute;
   left: 83vw; /* Adjusted to be within the viewport width */
   top: 240rem; /* Adjusted to be within the viewport height */
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 0deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -560,7 +611,7 @@ section p {
   position: absolute;
   left: 0;
   top: 290em;
-  z-index: 0; /* Ensure the image is in the background */
+  z-index: 10; /* Ensure the image is in the background */
   --e-transform-rotateZ: 358.8deg;
   transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
   transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
@@ -575,10 +626,12 @@ section p {
 }
 /* About Section */
  .about {
+  position: relative;
+  margin-top: 100vh;
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, #eaebe5, #ffffff);
-  z-index: 0;
+  z-index: 2;
 }
 
 .about h2{
@@ -686,7 +739,12 @@ section p {
 }
 
 /* Values Section */
+.values{
+  position: relative;
+  z-index: 2;
+}
 .quote-container {
+  
     display: flex;
     align-items: center;
     margin-bottom: 2rem; /* Space below the container */
@@ -1027,6 +1085,9 @@ blockquote p:after {
 /* Footer */
 /* Footer */
 footer {
+  position: relative;
+  z-index: 2;
+  background-color: white;
   background: linear-gradient(to bottom, #333, #444);
   padding: 2rem 0;
   font-family: 'Arial', sans-serif;
@@ -1304,12 +1365,14 @@ footer {
 }
 
 .background-image-container-misc2 {
-  width: auto!important;
+  width: auto;
   height: auto!important;
+  width:0;
 }
 .background-image-container-misc1 {
-  width: auto!important;
+  width: auto;
   height: auto!important;
+  width:0;
 }
   .desktop-content {
     display: none;
