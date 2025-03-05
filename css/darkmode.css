@@ -187,12 +187,15 @@ body.dark .stars {
     top: 135%;
 }
 
-/* Dark Mode toggle */
 html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensures it stretches full page */
-  background-color: #3e3f41; /* Change to any colour you like */
+  height: 100%;
+  background-color: #ffffff; /* Default light background */
+}
+
+html.dark-mode {
+  background-color: #3e3f41; /* Dark background */
 }
 
 .dark-mode-toggle {

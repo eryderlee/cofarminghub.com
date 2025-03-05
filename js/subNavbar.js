@@ -102,6 +102,7 @@ darkModeToggle.addEventListener('change', () => {
         // Then, in the next frame, add the second class that applies the dark mode styles
         requestAnimationFrame(() => {
             body.classList.add('dark-mode');
+            document.documentElement.style.backgroundColor = "#3e3f41";
         });
         localStorage.setItem('darkMode', 'enabled');
     } else {
@@ -111,6 +112,7 @@ darkModeToggle.addEventListener('change', () => {
         // Then, in the next frame, remove the "dark" class which controls the position
         requestAnimationFrame(() => {
             body.classList.remove('dark');
+            document.documentElement.style.backgroundColor = "#ffffff";
         });
         localStorage.setItem('darkMode', 'disabled');
     }
