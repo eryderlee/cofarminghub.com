@@ -218,6 +218,35 @@
     text-decoration: underline;
 }
 
+.profile-icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .profile-icon-container i {
+    font-size: 24px;
+    color: #333; /* Adjust icon color as needed */
+  }
+  
+  .profile-details {
+    display: none;
+    position: absolute;
+    top: 110%; /* Adjust vertical position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .profile-icon-container:hover .profile-details {
+    display: block;
+  }
+  
 .carousel-container {
     max-width: inherit;
     

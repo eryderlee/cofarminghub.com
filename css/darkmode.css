@@ -194,9 +194,7 @@ html {
   background-color: #ffffff; /* Default light background */
 }
 
-html.dark-mode {
-  background-color: #3e3f41; /* Dark background */
-}
+
 
 .dark-mode-toggle {
     background-color: #202721;

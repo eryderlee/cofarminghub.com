@@ -776,11 +776,11 @@ blockquote p {
 }
 
 blockquote p:before {
-    content: open-quote;
+    content: none;
 }
 
 blockquote p:after {
-    content: close-quote;
+    content: none;
 }
 .values-list {
     display: flex;
