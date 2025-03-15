@@ -408,7 +408,7 @@ html {
   }
 }
   /* Media Query for Smaller Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   :root {
     --switch-width: 50px;   /* Smaller width */
     --switch-height: 25px;  /* Smaller height */
