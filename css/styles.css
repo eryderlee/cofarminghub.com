@@ -54,6 +54,7 @@ display: none;
 
 }
 
+
 .logo img {
   width: 120px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
@@ -1402,7 +1403,6 @@ display:none
 }
 .dark-mode-switch-mobile{
 display:contents;
-
 }
 
 
@@ -1438,6 +1438,29 @@ font-size: 1.5rem;
 cursor: pointer;
 }
 
+.nav-header {
+  display: flex;
+  align-items: center;
+  /* either of these will spread them out: */
+  justify-content: space-between;
+  /* —or— */
+  /* gap: 1rem; */     /* plus margin-left:auto on the switch below */
+  width: 100%;         /* <-- critical */
+  box-sizing: border-box;
+  padding: 1rem;       /* adjust to your design */
+}
+.nav-header .dark-mode-switch-mobile {
+  margin-left: auto;
+  /* Adjust as needed */
+}
+
+/* 2b) reset any stray margins on the close button */
+.nav-header #nav-close {
+  margin: 1px;
+  padding: 1; /* or your desired click-area padding */
+  background: transparent;
+  border: none;
+}
 
 nav button {
 display: block; /* Show the button on mobile */

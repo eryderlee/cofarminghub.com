@@ -3,9 +3,12 @@ function createNavBar() {
         <header>
             <div>
                 <div class="container">
+                
                     <div class="logo">
                         <img src="../images/CoFarming hub logo.webp" alt="Co-Farming Hub Logo">
+                        
                     </div>
+                    
                         <div class="dark-mode-switch">
                         <label class="switch" for="darkModeToggle">
                             <input type="checkbox" id="darkModeToggle" />
@@ -22,27 +25,19 @@ function createNavBar() {
                             </div>
                         </label>
                      </div>
+
                     <button id="nav-open" aria-label="Open menu">
                         <i class="fa-solid fa-bars" style="color: #1fac0f;"></i>
                     </button>
                     
                     <nav id="nav" class="collapsed">
+                        <div class="nav-header">
+                            <button id="nav-close" aria-label="Close menu">
+                                <i class="fa-solid fa-x" style="color:rgb(172, 15, 15);"></i>
+                            
+                            </button>
 
-                        <button id="nav-close" aria-label="Close menu">
-                            <i class="fa-solid fa-x" style="color:rgb(172, 15, 15);"></i>
-                        </button>
-                            
-                        <ul id="nav-menu" class="expanded">
-                            
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="pages/about.html">About Us</a></li>
-                            <li><a href="pages/projects.html">Projects</a></li>
-                            <li><a href="pages/products.html">Products</a></li>
-                            <li><a href="pages/partners.html">Partners</a></li>
-                            <li><a href="pages/news.html">News & Events</a></li>
-                            <li><a href="pages/contact.html">Contact Us</a></li>
-                            <li>
-                                <div class="dark-mode-switch-mobile">
+                            <div class="dark-mode-switch-mobile">
                                 <label class="switch" for="darkModeToggle">
                                     <input type="checkbox" id="darkModeToggle" />
                                     <div class="sunmoon">
@@ -57,7 +52,20 @@ function createNavBar() {
                                         <img src="../images/stars.svg" alt="" class="stars" />
                                     </div>
                                 </label>
-                                </div>
+                            </div> 
+                        </div>
+                        <ul id="nav-menu" class="expanded">
+                            
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="pages/about.html">About Us</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                            <li><a href="pages/products.html">Products</a></li>
+                            <li><a href="pages/partners.html">Partners</a></li>
+                            <li><a href="pages/news.html">News & Events</a></li>
+                            <li><a href="pages/contact.html">Contact Us</a></li>
+
+                            <li class="highlighted-switch">
+                               
                             </li>
                      </ul>   
                     </nav>
